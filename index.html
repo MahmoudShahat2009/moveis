@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies App</title>
+    <link rel="shortcut icon" href="./imges/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body class="bg-black text-white ">
+    <div class="side-nav-menu min-vh-100 position-fixed d-flex top-0 ">
+        <div class="nav-tab bg-black  d-flex flex-column justify-content-between min-vh-100 p-4">
+            <div class="links">
+                <ul class="list-unstyled overflow-hidden">
+                    <li onclick="search()" class="py-2 position-relative">NowPlaying</li>
+                    <li onclick="getpopular()" class="py-2 position-relative">Popular</li>
+                    <li onclick="getTopReated()" class="py-2 position-relative">TopRated</li>
+                    <li onclick="getTrending()" class="py-2 position-relative">Trending</li>
+                    <li onclick="getUpcoming()" class="py-2 position-relative">Upcoming</li>
+                   <a href="#inputData"> <li onclick="" class="py-2 position-relative">Contact Us</li></a>
+                </ul>
+            </div>
+            <div class="nav-footer">
+                <div class="icons">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-solid fa-globe"></i>
+                </div>
+                <div class="footer">
+                    <p>Copyright Â© 2019 All Rights <br>Reserved.</p>
+                </div>
+            </div>
+        </div>
+        <div class="nav-header d-flex flex-column justify-content-between py-4 text-center py-2 bg-white text-black">
+            <img class="logo w-75 mx-auto" src="./imges/logo.png" alt="" srcset="">
+            <i class="fa-solid open-close-icon fa-align-justify fa-2x"></i>
+            <div>
+                <i class="fa-solid fa-globe d-block"></i>
+                <i class="fa-solid fa-share-nodes"></i>
+            </div>
+        </div>
+    </div>
+
+    <div class="container  py-5">
+        <div class="row  g-4 text-start " id= data>
+            
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div><h2>Contact Us</h2></div>
+        <div class="row g-4  pb-5 input-data " id="inputData">
+            <div class="col-lg-6">
+                <input type="text" class="form-control mt-4" placeholder="Enter Your Name " id="nameInput" >
+            </div>
+            <div class="col-lg-6">
+                <input type="email" class="form-control mt-4" placeholder="Enter Your Email" id="emailInput" >
+            </div>
+            <div class="col-lg-6">
+                <input type="text" class="form-control mt-4" placeholder="Enter Your Phone" id="phonInput" >
+            </div>
+            <div class="col-lg-6">
+                <input type="number" class="form-control mt-4" placeholder="Enter Your Age" id="ageInput" >
+            </div>
+            <div class="col-lg-6">
+                <input type="password" class="form-control mt-4" placeholder="Enter Your Password" id="passwordInput" >
+            </div>
+            <div class="col-lg-6">
+                <input type="password" class="form-control mt-4" placeholder="Renter Password" id="repasswordInput" required>
+            </div>
+        </div>
+        <button onclick="inputsValdtion()"  class="btn btn-info mb-3 text-center">submit</button>
+    </div>
+
+
+
+
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
